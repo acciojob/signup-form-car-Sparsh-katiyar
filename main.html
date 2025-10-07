@@ -6,52 +6,34 @@
 </head>
 
 <body>
-  <!-- Form starts here -->
-  <form>
-    <input type="text" id="name" placeholder="Name"><br>
-    <input type="email" id="email" placeholder="Email"><br><br>
+<label for ="Name" >Name</label>
+	<input placeholder="Name"type="text"id="name"required>
+		<label for = "Email">Email</label>
+	<input type="Email"placeholder="Email"type="Email"id="email"required>
 
-    <!-- Gender -->
-    <label>Gender:</label><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label><br>
-
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br><br>
-
-    <!-- Car Selection -->
-    <label for="cars">Select Car(s):</label><br>
-    <select id="cars" multiple>
-      <option>BMW</option>
-      <option>AUDI</option>
-      <option>Beamer</option>
-    </select><br><br>
-
-    <!-- Age -->
-    <label for="age">Age:</label><br>
-    <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age"><br><br>
-
-    <!-- Date of Birth -->
-    <label for="dob">Date of Birth:</label><br>
-    <input type="date" id="dob" name="dob"><br><br>
-
-    <!-- Phone -->
-    <label for="tel">Phone:</label><br>
-    <input type="tel" id="tel" placeholder="***-***-****"><br><br>
-
-    <!-- Password -->
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" placeholder="Password"><br><br>
-
-    <!-- Terms of Service -->
-    <input type="checkbox" id="tos">
-    <label for="tos">I agree to the TOS</label><br><br>
-
-    <!-- Submit button -->
-    <input type="submit" value="Submit">
-  </form>
-
-  <!-- External script -->
+		<label for="gender_m">Male</label>
+		<input type = "radio"id="gender_m"name="Gender" required>
+		<label for="gender_f">Female</label>
+		<input type = "radio"id="gender_f"name="Gender" required>
+		<select placeholder="please choose an option"id = Cars required>
+			<option>BMW</option>
+			<option>Beamer</option>
+			<option>Audi</option>
+		</select>
+	<label for="age">Age</label>
+	<input id="Age"type="number"placeholder="Age"required>
+  <label for="dob">DOB</label>
+	<input id="dob"type="date"required>
+	
+	<label for="tel">Phone Number</label>
+	<input id="tel"type="Tel"placeholder="xxx-xxx-xxx"required>
+	<label for="Password">Password</label>
+	<input id="password"type="password"placeholder="password"required>
+	<label for="tos">I agree to the TOS</label>
+	<input type ="checkbox"required id="tos">
+	<button type="submit">
+	
+	<!-- External script -->
   <script src="./script.js"></script>
 </body>
 </html>
